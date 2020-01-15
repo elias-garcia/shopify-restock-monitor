@@ -1,0 +1,35 @@
+{
+	"extends": [
+		"tslint:recommended"
+	],
+	"rules": {
+		"indent": [
+			true,
+			"tabs",
+			2
+		],
+		"no-inferrable-types": true,
+		"no-unsafe-any": true,
+		"typedef": [
+			true,
+			"call-signature",
+			"parameter",
+			"property-declaration",
+			"member-variable-declaration",
+			"object-destructuring",
+			"array-destructuring"
+		],
+		"strict-boolean-expressions": true,
+		"no-any": true,
+		"interface-name": false,
+		"object-literal-sort-keys": false,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "always",
+				"singleline": "never"
+			}
+		],
+		"eofline": true
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "hypebeast-monitor",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/main.js",
+	"engines": {
+		"node": "12.14.0"
+	},
+	"scripts": {
+		"prebuild": "rm -rf dist",
+		"build": "tsc",
+		"lint": "tslint --project .",
+		"lint:fix": "npm run lint -- --fix",
+		"start": "node ./dist/main.js",
+		"start:dev": "nodemon"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elias-garcia/hypebeast-monitor.git"
+	},
+	"author": "elias-garcia",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/elias-garcia/hypebeast-monitor/issues"
+	},
+	"homepage": "https://github.com/elias-garcia/hypebeast-monitor#readme",
+	"dependencies": {
+		"mongoose": "^5.8.4",
+		"pino": "^5.15.0",
+		"pino-pretty": "^3.5.0",
+		"yup": "^0.28.0"
+	},
+	"devDependencies": {
+		"@types/mongoose": "^5.5.38",
+		"@types/pino": "^5.15.1",
+		"@types/yup": "^0.26.27",
+		"nodemon": "^2.0.2",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7.4"
+	}
+}
