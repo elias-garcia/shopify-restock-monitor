@@ -1,6 +1,6 @@
 import Decoder from "jsonous";
 
-export function decode<T>(
+export function applyDecoder<T>(
 	data: unknown,
 	decoder: Decoder<T>,
 ): T {

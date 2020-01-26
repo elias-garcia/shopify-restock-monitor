@@ -1,4 +1,4 @@
-import { decode } from "../../infrastructure/decoding";
+import { applyDecoder } from "../../infrastructure/decoding";
 import * as httpClient from "../../infrastructure/http-client";
 import { getRandomProxy } from "../proxies";
 import { productsDecoder } from "./decoders/product.decoder";
@@ -22,5 +22,5 @@ export async function getProducts(shopName: string): Promise<Product[]> {
 		throw new Error(`${response.status}: ${response.statusText}`);
 	}
 
-	return decode(response.data, productsDecoder);
+	return applyDecoder(response.data, productsDecoder);
 }
