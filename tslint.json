@@ -30,6 +30,9 @@
 				"singleline": "never"
 			}
 		],
-		"eofline": true
+		"eofline": true,
+		"array-type": [
+			false
+		]
 	}
 }

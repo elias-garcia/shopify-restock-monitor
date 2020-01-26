@@ -25,15 +25,17 @@
 	},
 	"homepage": "https://github.com/elias-garcia/hypebeast-monitor#readme",
 	"dependencies": {
+		"axios": "^0.19.1",
+		"jsonous": "^5.0.1",
 		"mongoose": "^5.8.4",
 		"pino": "^5.15.0",
 		"pino-pretty": "^3.5.0",
-		"yup": "^0.28.0"
+		"puppeteer": "^2.0.0"
 	},
 	"devDependencies": {
 		"@types/mongoose": "^5.5.38",
 		"@types/pino": "^5.15.1",
-		"@types/yup": "^0.26.27",
+		"@types/puppeteer": "^2.0.0",
 		"nodemon": "^2.0.2",
 		"tslint": "^5.20.1",
 		"typescript": "^3.7.4"

@@ -1,9 +1,9 @@
-import * as api from "./monitor";
-import { logger } from "./monitor/logging";
+import * as app from "./app";
+import { logger } from "./infrastructure/logging";
 
 (async () => {
 	try {
-		await api.start();
+		await app.run();
 	} catch (err) {
 		// tslint:disable-next-line: no-unsafe-any
 		logger.error(err.message);
