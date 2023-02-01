@@ -27,7 +27,7 @@
 	"dependencies": {
 		"axios": "^0.19.1",
 		"jsonous": "^5.0.1",
-		"mongoose": "^5.8.4",
+		"mongoose": "^5.13.15",
 		"pino": "^5.15.0",
 		"pino-pretty": "^3.5.0",
 		"puppeteer": "^2.0.0"
